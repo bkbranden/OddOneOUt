@@ -4,6 +4,7 @@ var http = require("http").Server(app);
 
 
 app.use("/public", express.static(__dirname + "/public"));
+app.use("/img", express.static(__dirname + "/img"));
 
 app.get('/', function(req,res){
   res.sendFile(__dirname + "/index.html");
